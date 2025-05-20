@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mariana 20150721 vs 20160426</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+  <style>
+    body { margin: 0; padding: 0; }
+    #juxtapose-slider { width: 100vw; height: 600px; max-width: 100%; }
+    @media (max-width: 900px) { #juxtapose-slider { height: 350px; } }
+    @media (max-width: 600px) { #juxtapose-slider { height: 200px; } }
+  </style>
+</head>
+<body>
+  <div id="juxtapose-slider"></div>
+  <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+  <script>
+    new juxtapose.JXSlider('#juxtapose-slider',
+      [
+        {
+          src: '20150721_mariana.jpg',
+          label: '20150721'
+        },
+        {
+          src: '20160426_mariana.jpg',
+          label: '20160426'
+        }
+      ],
+      {
+        animate: true,
+        showLabels: true,
+        showCredits: false,
+        startingPosition: "66%",
+        makeResponsive: true
+      }
+    );
+  </script>
+</body>
+</html>
